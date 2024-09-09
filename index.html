@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Gallery Widgets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side"></div>
+        <div class="right-side">
+            <!-- About Me Widget -->
+            <div class="about-widget">
+                <div class="tabs">
+                    <button class="tab active" data-tab="about">About Me</button>
+                    <button class="tab" data-tab="experiences">Experiences</button>
+                    <button class="tab" data-tab="recommended">Recommended</button>
+                </div>
+                <div class="tab-content" id="about">
+                    <p>Hello! I'm Dave, your sales rep here from Salesforce. I’ve been working at this awesome company for 3 years now.</p>
+                    <p>I was born and raised in Albany, NY & have been living in Santa Carla for the past 10 years with my wife Tiffany and my 4-year-old twin daughters - Emma and Ella. Both of them are just starting school, so my calendar is usually blocked between 9-10 AM. This is a...</p>
+                </div>
+                <div class="tab-content" id="experiences" style="display: none;">
+                    <p>Experience details go here...</p>
+                </div>
+                <div class="tab-content" id="recommended" style="display: none;">
+                    <p>Recommended details go here...</p>
+                </div>
+            </div>
+
+            <!-- Gallery Widget -->
+            <div class="gallery-widget">
+                <div class="gallery-header">
+                    <span>Gallery</span>
+                    <input type="file" id="upload-image" accept="image/*" style="display: none;">
+                    <button id="add-image-btn">+ ADD IMAGE</button>
+                </div>
+                <div class="gallery">
+                    <img src="457008320_472517279024555_407595411597807842_n.jpg" alt="Image 1">
+                    <img src="457026131_793904519352474_3798297619078279563_n.jpg" alt="Image 2">
+                    <img src="457042218_1154631808967786_815708472687751404_n.jpg" alt="Image 3">
+                    <img src="457063793_395724529907235_4646983435334839169_n.jpg" alt="Image 4">
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev-btn">&larr;</button>
+                    <button id="next-btn">&rarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
